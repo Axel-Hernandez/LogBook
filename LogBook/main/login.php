@@ -9,24 +9,24 @@ $consulta = "SELECT * FROM alumnos WHERE Usuario = '$usuario' and Password = '$p
 if ($resultado = $conecta->query($consulta)) {
     while ($row = $resultado->fetch_array()) {
        $userok = $row['Usuario'];
-       $password = $row['Password']; 
+       $password = $row['Password'];
 
     }
     $resultado->close();
 }
 $conecta->close();
 
-if (isset($usuario) && isset ($password)) {  
+if (isset($usuario) && isset ($password)) {
     if($usuario == $userok && $password == $passwordok) {
         $_SESSION['Login']= TRUE;
         $_SESSION['Usuario'] = $usuario;
         header("location:../principal.php");
     }
     else{
-        header("location:../Aplicacion1.php");
+        header("location:../AplicacionBook.php");
     }
     else{
-        header("location:../Aplicacion1.php");
+        header("location:../AplicacionBook.php");
     }
 }
 

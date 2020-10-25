@@ -8,6 +8,8 @@
        <title>LooGBook</title>
     </head>
    <body>
+      <body style="background-color:green">
+
     <div class="container">
            <h3 class="text-center py-4">¡Bienvenido a LooGBook!</h3>
      <div class="card">
@@ -29,9 +31,11 @@
        </div>
      </div>
    </div>
+
   <div class="container">
-     <p class="text-center">¡Hola!</p>
+     <h3 class="img-center py-4"><img src="img/log.jpeg" alt="LogBook" witdh="300" height="300"> </h3>
   </div>
+
    <script type="text/javascript">
    function verpass(cb){
      if (cb.checked)
